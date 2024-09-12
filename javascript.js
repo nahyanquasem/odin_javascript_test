@@ -3,7 +3,7 @@ const pageBody = document.querySelector('body');
 const colorValuesPage = document.querySelector('#colorValues');
 const mouseOverButton = document.querySelector('#mouseOverButton');
 
-let text = `RED: 128 GREEN: 128 BLUE: 128`;
+let text = `RED: 255 GREEN: 255 BLUE: 255`;
 colorValues.textContent = text;
 
 
@@ -33,10 +33,10 @@ function changeBackgroundColorRandomly(){
 }
 
 
-pageBody.addEventListener('click', changeBackgroundColorRandomly);
+// pageBody.addEventListener('click', changeBackgroundColorRandomly);
 
-mouseOverButton.addEventListener('mouseenter', changeBackgroundColorRandomly);
-mouseOverButton.addEventListener('mouseleave', changeBackgroundColorRandomly);
+// mouseOverButton.addEventListener('mouseenter', changeBackgroundColorRandomly);
+// mouseOverButton.addEventListener('mouseleave', changeBackgroundColorRandomly);
 
 
 let menu = document.querySelector('#menu');

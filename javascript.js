@@ -3,8 +3,12 @@ const pageBody = document.querySelector('body');
 const colorValuesPage = document.querySelector('#colorValues');
 const mouseOverButton = document.querySelector('#mouseOverButton');
 
+const radioRedButton = document.querySelector('#RED');
+const radioGreenButton = document.querySelector('#GREEN');
+const radioBlueButton = document.querySelector('#BLUE');
+
 let text = `RED: 255 GREEN: 255 BLUE: 255`;
-colorValues.textContent = text;
+// colorValues.textContent = text;
 
 
 
@@ -31,6 +35,23 @@ function changeBackgroundColorRandomly(){
     pageBody.style.cssText = `background-color:rgb(${colors[0]} ${colors[1]} ${colors[2]})`;
 
 }
+
+radioRedButton.addEventListener('click', () =>{
+    console.log('RED WAS CLICKED')
+
+});
+
+radioGreenButton.addEventListener('click', () =>{
+    console.log('GREEN WAS CLICKED')
+
+});
+
+radioBlueButton.addEventListener('click', () =>{
+    console.log('BLUE WAS CLICKED')
+
+});
+
+
 
 
 // pageBody.addEventListener('click', changeBackgroundColorRandomly);

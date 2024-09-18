@@ -39,26 +39,26 @@ function changeBackgroundColorRandomly(){
 // mouseOverButton.addEventListener('mouseleave', changeBackgroundColorRandomly);
 
 
-let menu = document.querySelector('#menu');
-const outputPara = document.querySelector('#outpara');
+// let menu = document.querySelector('#menu');
+// const outputPara = document.querySelector('#outpara');
 
 //test out bubbling and capturing events at different levels of the DOM
 
-menu.addEventListener('click', (event)=>{
+// menu.addEventListener('click', (event)=>{
     
-    switch(event.target.id){
-        case 'home':
-            outputPara.textContent = 'The home button was clicked';
-            break;
-        case 'dashboard':
-            outputPara.textContent = 'The dashboard button was clicked';
-            break;
-        case 'report':
-            outputPara.textContent = 'The report button was clicked';
-            break;
-    }
+//     switch(event.target.id){
+//         case 'home':
+//             outputPara.textContent = 'The home button was clicked';
+//             break;
+//         case 'dashboard':
+//             outputPara.textContent = 'The dashboard button was clicked';
+//             break;
+//         case 'report':
+//             outputPara.textContent = 'The report button was clicked';
+//             break;
+//     }
 
-});
+// });
 
 
 

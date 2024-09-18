@@ -1,15 +1,36 @@
 
 const pageBody = document.querySelector('body');
-const colorValuesPage = document.querySelector('#colorValues');
-const mouseOverButton = document.querySelector('#mouseOverButton');
+// const colorValuesPage = document.querySelector('#colorValues');
+// const mouseOverButton = document.querySelector('#mouseOverButton');
 
-const radioRedButton = document.querySelector('#RED');
-const radioGreenButton = document.querySelector('#GREEN');
-const radioBlueButton = document.querySelector('#BLUE');
+// const radioRedButton = document.querySelector('#RED');
+// const radioGreenButton = document.querySelector('#GREEN');
+// const radioBlueButton = document.querySelector('#BLUE');
+
+const radioColorChoice = document.querySelectorAll('input[name=color_choice]')
 
 let text = `RED: 255 GREEN: 255 BLUE: 255`;
 // colorValues.textContent = text;
 
+radioColorChoice.forEach((cell) =>{
+
+    cell.addEventListener('click', (event) => {
+
+        switch(event.target.id){
+            case 'RED':
+                console.log('RED WAS CLICKED');
+                break;
+            case 'GREEN':
+                console.log('GREEN WAS CLICKED');
+                break;
+            case 'BLUE':
+                console.log('BLUE WAS CLICKED');
+                break;
+        }
+
+    });
+
+});
 
 
 function randomColorGenerator(){
@@ -36,20 +57,22 @@ function changeBackgroundColorRandomly(){
 
 }
 
-radioRedButton.addEventListener('click', () =>{
-    console.log('RED WAS CLICKED')
 
-});
 
-radioGreenButton.addEventListener('click', () =>{
-    console.log('GREEN WAS CLICKED')
+// radioRedButton.addEventListener('click', () =>{
+//     console.log('RED WAS CLICKED')
 
-});
+// });
 
-radioBlueButton.addEventListener('click', () =>{
-    console.log('BLUE WAS CLICKED')
+// radioGreenButton.addEventListener('click', () =>{
+//     console.log('GREEN WAS CLICKED')
 
-});
+// });
+
+// radioBlueButton.addEventListener('click', () =>{
+//     console.log('BLUE WAS CLICKED')
+
+// });
 
 
 

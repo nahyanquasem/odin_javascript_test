@@ -10,9 +10,9 @@ const pageBody = document.querySelector('body');
 const radioColorChoice = document.querySelectorAll('input[name=color_choice]')
 
 let text = `RED: 255 GREEN: 255 BLUE: 255`;
-const redText = 'RED: 255 GREEN: 0 BLUE: 0';
-const greenText = 'RED: 0 GREEN: 255 BLUE: 0';
-const blueText = 'RED: 0 GREEN: 0 BLUE: 255';
+const redText = '255 0 0';
+const greenText = '0 255 0';
+const blueText = '0 0 255';
 // colorValues.textContent = text;
 
 radioColorChoice.forEach((cell) =>{
@@ -22,7 +22,7 @@ radioColorChoice.forEach((cell) =>{
         switch(event.target.id){
             case 'RED':
                 console.log('RED WAS CLICKED');
-                pageBody.style.cssText = `background-color:rgb(RED: 255 GREEN: 0 BLUE: 0)`;
+                pageBody.style.cssText = `background-color:rgb(${redText})`;
                 break;
             case 'GREEN':
                 console.log('GREEN WAS CLICKED');
